@@ -1,0 +1,9 @@
+<div class="well">
+    <h1 class="text-center font-size-20">Done Component</h1>
+    <br/>  
+    <div *ngFor="#item of doneItems" (click)="onSelect(item)">
+           <a class="grey-background-hover btn btn-default"> > </a>
+           {{item.name}}
+    </div>
+    
+</div> 

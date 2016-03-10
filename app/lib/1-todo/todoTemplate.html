@@ -1,0 +1,25 @@
+<div class="well">
+    <h2 class="text-center font-size-20">ToDo Component</h2>
+    <br/>
+  
+    <!-- 
+    <div class="row" *ngFor="#item of todoItems" (click)="onSelect(item)">
+        <div class="col-xs-2">
+            <a class="grey-background-hover btn btn-default"> > </a>
+        </div>
+        <div class="col-xs-10">
+           {{item.name}}
+        </div>
+    </div> -->
+    
+    
+    <div *ngFor="#item of todoItems" (click)="onSelect(item)">
+           <a class="grey-background-hover btn btn-default"> > </a>
+           {{item.name}}
+    </div>
+    
+</div> <!-- .WELL -->
+
+
+<!--[class.selected]="hero === selectedHero"-->
+

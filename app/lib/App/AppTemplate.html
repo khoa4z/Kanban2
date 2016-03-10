@@ -1,0 +1,15 @@
+<h1 class="text-center"> KanBan </h1>
+<br/>
+<inputBox [todoItems]="todoItems"></inputBox>
+<br/>
+<div class="row">
+    <div class="col-sm-4 padding-right">
+        <todo [todoItems]="todoItems" [doingItems]="doingItems"></todo>
+    </div>
+    <div class="col-sm-4 padding-left-right">
+        <doing [doingItems]="doingItems" [doneItems]="doneItems"></doing>
+    </div>
+    <div class="col-sm-4 padding-left">
+        <done [doneItems]="doneItems"></done>
+    </div>
+</div>
