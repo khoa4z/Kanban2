@@ -1,3 +1,7 @@
+> npm install
+> npm start        
+        
+        
         z                                               
              z"F"$$.                                              
        -%- . Led$$$$P-                                            
