@@ -34,3 +34,16 @@
 .well{
    background-color: white;
 }
+
+.vcenter {
+    vertical-align: middle;
+}
+
+.btn-wordWrap{
+    white-space:normal !important;
+    word-wrap:break-word; 
+}
+
+.just89percent{
+    max-width:89%;
+}
