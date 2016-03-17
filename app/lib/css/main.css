@@ -21,7 +21,7 @@
     border-radius: 16px;
     color:#ccc;
     border-color:white;
-    margin-bottom: 3px;
+    margin-top: 6px;
 }
 .grey-background-hover:hover{
     font-weight: 600;
@@ -42,6 +42,18 @@
 .btn-wordWrap{
     white-space:normal !important;
     word-wrap:break-word; 
+}
+
+/*.hoverFriend{
+    background-color: inherit;
+}*/
+
+.hoverFriend:hover + .grey-background-hover2{
+    font-weight: 600;
+    /*transition: font-weight 0.1s;*/
+    background-color: #e6e6e6;
+    border-color:white;
+    color:#888484;
 }
 
 .just89percent{

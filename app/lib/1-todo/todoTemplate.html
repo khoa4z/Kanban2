@@ -1,5 +1,14 @@
+<style>
+    .a:hover ~ .b {
+            font-weight: 600;
+            /*transition: font-weight 0.1s;*/
+            background-color: #e6e6e6;
+            border-color:white;
+            color:#888484;
+    }
+</style>
 <div class="well">
-    <h2 class="text-center font-size-20">ToDo Component</h2>
+    <h2 class="text-center font-size-20" >ToDo Component</h2>
     <br/>    
     <!--<div class="row" *ngFor="#item of todoItems" (click)="onSelect(item)">
         <div class="col-xs-1 col-xs-1-offset">
@@ -12,10 +21,9 @@
     
     
     <div *ngFor="#item of todoItems" (click)="onSelect(item)" style="padding-bottom:2px">
-           <a class="grey-background-hover btn btn-default vcenter"> > </a>
-           <a class="btn btn-default btn-wordWrap just89percent">{{item.name}}</a>
+           <a class="btn btn-default btn-wordWrap just89percent a">{{item.name}}</a>
+           <a class="grey-background-hover btn btn-default vcenter b" style="float:left"> > </a>
     </div>
-    
 </div> <!-- .WELL -->
 
 
