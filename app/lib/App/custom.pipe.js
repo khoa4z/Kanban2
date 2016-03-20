@@ -1,4 +1,6 @@
-System.register(['angular2/core'], function(exports_1) {
+System.register(['angular2/core'], function(exports_1, context_1) {
+    "use strict";
+    var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
         var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
         if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -38,7 +40,7 @@ System.register(['angular2/core'], function(exports_1) {
                     __metadata('design:paramtypes', [])
                 ], TodoItemPipe);
                 return TodoItemPipe;
-            })();
+            }());
             exports_1("TodoItemPipe", TodoItemPipe);
             DoingItemPipe = (function () {
                 function DoingItemPipe() {
@@ -54,7 +56,7 @@ System.register(['angular2/core'], function(exports_1) {
                     __metadata('design:paramtypes', [])
                 ], DoingItemPipe);
                 return DoingItemPipe;
-            })();
+            }());
             exports_1("DoingItemPipe", DoingItemPipe);
             DoneItemPipe = (function () {
                 function DoneItemPipe() {
@@ -70,7 +72,7 @@ System.register(['angular2/core'], function(exports_1) {
                     __metadata('design:paramtypes', [])
                 ], DoneItemPipe);
                 return DoneItemPipe;
-            })();
+            }());
             exports_1("DoneItemPipe", DoneItemPipe);
         }
     }

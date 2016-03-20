@@ -1,4 +1,6 @@
-System.register(['angular2/core'], function(exports_1) {
+System.register(['angular2/core'], function(exports_1, context_1) {
+    "use strict";
+    var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
         var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
         if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -19,18 +21,24 @@ System.register(['angular2/core'], function(exports_1) {
             DoneComponent = (function () {
                 function DoneComponent() {
                     this.doneItems = [];
+                    this.doingItems = [];
                 }
                 DoneComponent.prototype.ngOnInit = function () { };
+                DoneComponent.prototype.onSelect = function (item) {
+                    item.stage = 2;
+                    this.doingItems.push(item);
+                    this.doneItems.splice(this.doneItems.indexOf(item, 0), 1);
+                };
                 DoneComponent = __decorate([
                     core_1.Component({
                         selector: 'done',
                         templateUrl: './app/lib/3-done/doneTemplate.html',
-                        inputs: ['doneItems']
+                        inputs: ['doneItems', 'doingItems']
                     }), 
                     __metadata('design:paramtypes', [])
                 ], DoneComponent);
                 return DoneComponent;
-            })();
+            }());
             exports_1("DoneComponent", DoneComponent);
         }
     }

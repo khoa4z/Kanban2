@@ -8,8 +8,6 @@ import {Item} from '../models/todoitems';
 
 @Component({
     selector: 'my-app',
-    //template: '<h1>#ShietGettingReal</h1>',
-    //templateUrl: './app/AppTemplate.html',
     templateUrl : `./app/lib/App/AppTemplate.html`, //Wierd HA
     directives: [InputComponent, TodoComponent, DoingComponent, DoneComponent],
     providers: [ItemService]
@@ -23,38 +21,14 @@ export class AppComponent implements OnInit {
     
     constructor(private _itemService: ItemService) {  }
     ngOnInit() { 
-        this._itemService.getItems().then(items => this.todoItems = items);
+        //@todo: need to reconfigure
+        this._itemService.getItems().then(items => this.todoItems = items); //change from Angular2.0.8 to 2.0.9
+        //this.todoItems = this._itemService.getItems();
+        
+        
         //this._itemService.getItemsForStage().then(items => this.items = items);
         //this.onlyFirstStage();
     }
-  
-    
-    
-    // public onlyFirstStage(){ //: Item[] {
-    //     console.log("inside onlyFirstStage");
-    //     console.log(this.items.length);
-        
-    //     var firstItem: Item[] = [];
-    //     firstItem = new Array(100);
-    //    // firstItem = new Item[this.items.length];
-    //     var num: number = 6;
-        
-    //     for(var i = 0; i<this.items.length; i++){
-    //         if(this.items[i].stage == 1){
-    //             console.log("Push Item: " + this.items[i].id);
-    //             firstItem.push(this.items[i]);
-    //             //firstItem[0] = this.items[i];
-    //         }
-    //     }
-    //     //firstItem
-    //     console.log("firstItem"); 
-    //     console.log(firstItem); 
-        
-    //     //this.items1 = firstItem;
-        
-    //     //return this.items;
-    //     //return firstItem;
-    // }
 }
 
 

@@ -1,8 +1,18 @@
-npm install
+1> npm install -g typescript
 
-npm start        
+2> npm install
+
+3> npm start        
+
         
-        
+Issue: "angular2.dev.js:4045 Uncaught TypeError: m.values is not a function"
+Reason: Browser doesn't support ES6
+ADD <script src="../node_modules/es6-shim/es6-shim.js"></script> to index.html
+npm install es6-shim --save
+
+
+
+
         z                                               
              z"F"$$.                                              
        -%- . Led$$$$P-                                            

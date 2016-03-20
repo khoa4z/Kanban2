@@ -1,8 +1,10 @@
 <div class="well">
     <h1 class="text-center font-size-20">Doing Component</h1>
     <br/>       
-    <div *ngFor="#item of doingItems" (click)="onSelect(item)" style="padding-bottom:2px">
-           <a class="grey-background-hover btn btn-default vcenter"> > </a>
-           <a class="btn btn-default btn-wordWrap just89percent">{{item.name}}</a>
-    </div>
+    <ul style="padding-left:0px">
+       <li *ngFor="#item of doingItems" (click)="onSelect(item)" class="itemList">
+           <a class="btn btn-default btn-wordWrap just89percent">{{ item.name }}</a>
+       </li> 
+    </ul>
+        
 </div>
