@@ -3,7 +3,9 @@ import {InputComponent} from '../0-input/input.component';
 import {TodoComponent}  from '../1-todo/todo.component';
 import {DoingComponent} from '../2-doing/doing.component';
 import {DoneComponent}  from '../3-done/done.component';
+
 import {ItemService} from '../App/item.service';
+
 import {Item} from '../models/todoitems';
 
 @Component({
