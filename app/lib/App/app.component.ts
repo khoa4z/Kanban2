@@ -8,11 +8,14 @@ import {ItemService} from '../App/item.service';
 
 import {Item} from '../models/todoitems';
 
+import {DragulaService, Dragula} from 'ng2-dragula/ng2-dragula';
+
 @Component({
     selector: 'my-app',
     templateUrl : `./app/lib/App/AppTemplate.html`, //Wierd HA
-    directives: [InputComponent, TodoComponent, DoingComponent, DoneComponent],
-    providers: [ItemService]
+    directives: [InputComponent, TodoComponent, DoingComponent, DoneComponent, Dragula],
+    providers: [ItemService],
+    viewProviders:[DragulaService]
 })
 export class AppComponent implements OnInit {
     public title = 'Kanban';  

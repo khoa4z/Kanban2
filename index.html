@@ -23,11 +23,14 @@
 
     <script>
         System.config({
-            packages: {        
-                app: {
-                    format: 'register',
-                    defaultExtension: 'js'
-                }
+            defaultJSExtensions: true,
+            paths: {
+                'dragula': `node_modules/dragula/dist/dragula.min`,
+                'ng2-dragula/ng2-dragula': `node_modules/ng2-dragula/ng2-dragula`
+            },
+            packages: {
+                angular2: { defaultExtension: false },
+                rxjs: { defaultExtension: false }
             }
         });
          
