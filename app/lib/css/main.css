@@ -105,3 +105,7 @@ li.itemList:hover:before {
     background-image: none;
     outline: 1;
 }
+
+.gu-mirror{
+    visibility: hidden;
+}

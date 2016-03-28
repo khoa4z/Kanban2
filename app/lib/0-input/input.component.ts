@@ -5,6 +5,7 @@ import {Item} from '../models/todoitems';
     selector: 'inputBox',
     templateUrl: './app/lib/0-input/inputTemplate.html',
     inputs:['todoItems'],    
+    
 })
 
 export class InputComponent implements OnInit {

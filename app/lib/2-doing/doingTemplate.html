@@ -1,8 +1,8 @@
 <div class="well">
     <h1 class="text-center font-size-20">Doing Component</h1>
     <br/>       
-    <ul style="padding-left:0px">
-       <li *ngFor="#item of doingItems" (click)="onSelect(item)" class="itemList">
+    <ul style="padding-left:0px" [dragula]='"mydragula"'>
+       <li *ngFor="#item of doingItems" (click)="onSelect(item)" class="itemList" >
            <a class="btn btn-default btn-wordWrap just89percent">{{ item.name }}</a>
        </li> 
     </ul>

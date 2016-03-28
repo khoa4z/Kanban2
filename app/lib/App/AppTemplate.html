@@ -4,12 +4,13 @@
 <br/>
 <div class="row">
     <div class="col-sm-4 padding-right">
-        <todo [todoItems]="todoItems" [doingItems]="doingItems"></todo>
+        <todo [todoItems]="todoItems" [doingItems]="doingItems" [dragulaItems]="dragulaService"></todo>
     </div>
     <div class="col-sm-4 padding-left-right">
-        <doing [doingItems]="doingItems" [doneItems]="doneItems"></doing>
+        <doing [doingItems]="doingItems" [doneItems]="doneItems" [dragulaItems]="dragulaService"></doing>
     </div>
     <div class="col-sm-4 padding-left">
-        <done [doneItems]="doneItems" [doingItems]="doingItems"></done>
+        <done [doneItems]="doneItems" [doingItems]="doingItems" ></done>
     </div>
 </div>
+

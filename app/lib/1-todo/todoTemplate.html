@@ -10,10 +10,9 @@
            <a class="grey-background-hover btn btn-default vcenter b"> > </a>
     </div>-->
     
-    <ul style="padding-left:0px">
-       <li *ngFor="#item of todoItems" (click)="onSelect(item)" class="itemList">
+    <ul style="padding-left:0px" [dragula]='"mydragula"'>
+       <li *ngFor="#item of todoItems" (click)="onSelect(item)" class="itemList" >
            <a class="btn btn-default btn-wordWrap just89percent">{{ item.name }}</a>
-       </li> 
+       </li>
     </ul>
-        
 </div> <!-- .WELL -->

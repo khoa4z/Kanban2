@@ -1,7 +1,7 @@
 <div class="well">
     <h1 class="text-center font-size-20">Done Component</h1>
     <br/>  
-    <ul style="padding-left:0px">
+    <ul style="padding-left:0px" [dragula]='"first-bag"'>
        <li *ngFor="#item of doneItems" (click)="onSelect(item)" class="itemList">
            <a class="btn btn-default btn-wordWrap just89percent">{{ item.name }}</a>
        </li> 

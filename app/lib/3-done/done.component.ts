@@ -1,10 +1,11 @@
 import {Component, OnInit} from 'angular2/core';
 import {Item} from '../models/todoitems';
-
+import {DragulaService, Dragula} from 'ng2-dragula/ng2-dragula';
 @Component({
     selector: 'done',
     templateUrl: './app/lib/3-done/doneTemplate.html',
-    inputs:['doneItems', 'doingItems']  
+    inputs:['doneItems', 'doingItems'] ,
+     directives: [Dragula] 
 })
 
 export class DoneComponent implements OnInit {

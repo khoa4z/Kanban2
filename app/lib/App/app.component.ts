@@ -23,8 +23,9 @@ export class AppComponent implements OnInit {
     public todoItems: Item[] =[];
     public doingItems: Item[] =[];
     public doneItems: Item[] =[];
+    //public mydragula: Dragula;
     
-    constructor(private _itemService: ItemService) {  }
+    constructor(private _itemService: ItemService, public dragulaService: DragulaService) {  }
     ngOnInit() { 
         //@todo: need to reconfigure
         this._itemService.getItems().then(items => this.todoItems = items); //change from Angular2.0.8 to 2.0.9
